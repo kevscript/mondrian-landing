@@ -9,27 +9,19 @@
 </head>
 <body>
 
-  <!-----/---/ Header /---/----->
-  <div class="header">
-    <h1 class="header__title">BERUIT</h1>
-    <input type="text" class="header__search"/>
-  </div>
 
 
-  <!-----/---/ Menu /---/----->
-  <nav class="menu">
-    <ul class="menu__nav">
-      <li><a href="#">News</a></li>
-      <li><a href="#">Architecture</a></li>
-      <li><a href="#">Design</a></li>
-      <li><a href="#">Art</a></li>
-      <li><a href="#">Interiors</a></li>
-    </ul>
-  </nav>
+  <div class="container">
 
-
-  <!-----/---/ Sidebar /---/----->
+    <!-----/---/ Sidebar /---/----->
   <div class="sidebar">
+
+
+    <!-----/---/ Header /---/----->
+    <div class="sidebar__header">
+      <h1 class="sidebar__header__title">BERUIT</h1>
+      <input type="text" class="sidebar__header__search"/>
+    </div>
 
     <!-- Sidebar-Main -->
     <div class="sidebar__main">
@@ -54,12 +46,36 @@
         <div class="sidebar__footer__wrapper__right"></div>
       </div>
     </div>
+
   </div>
 
 
-  <!-----/---/ Main /---/----->
-  <div class="main"></div>
 
+  <!-----/---/ Main /---/----->
+  <div class="main">
+
+    <!-----/---/ Menu /---/----->
+    <nav class="main__menu">
+      <ul class="main__menu__nav">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Architecture</a></li>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Art</a></li>
+        <li><a href="#">Interiors</a></li>
+      </ul>
+    </nav>
+
+    <div class="main__bg__wrapper">
+      <img src="./assets/bg1.jpeg" alt="">
+      <img src="./assets/bg2.jpeg" alt="">
+    </div>
+
+
+  </div>
+
+
+
+  </div>
 
   <script src="app.js"></script>
 </body>
