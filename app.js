@@ -3,12 +3,14 @@ sideSquareWrap = document.querySelector('.sidebar__square__wrapper');
 sideMainWrap = document.querySelector('.sidebar__main__wrapper');
 
 mainBgWrap = document.querySelector('.main__bg__wrapper');
+mainBoxWrap = document.querySelector('.main__box__wrapper');
 
 function onWheelScroll() {
   sideFooterWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
   sideSquareWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
   sideMainWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
   mainBgWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
+  mainBoxWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
 
   console.log(window.getComputedStyle(sideFooterWrap).getPropertyValue('transform'))
 
@@ -18,12 +20,14 @@ function onWheelScroll() {
     sideSquareWrap.style.transform = 'translateX(0)'
     sideMainWrap.style.transform = 'translateX(0)'
     mainBgWrap.style.transform = 'translateX(0)'
+    mainBoxWrap.style.transform = 'translateX(0)'
 
   } else {
     sideFooterWrap.style.transform = 'translateX(0)'
     sideSquareWrap.style.transform = 'translateX(-50%)'
     sideMainWrap.style.transform = 'translateX(-50%)'
     mainBgWrap.style.transform = 'translateX(-50%)'
+    mainBoxWrap.style.transform = 'translateX(-50%)'
   }
 }
 
