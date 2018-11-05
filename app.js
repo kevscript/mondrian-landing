@@ -1,24 +1,24 @@
-footerWrap = document.querySelector('.footer__wrapper');
-squareWrap = document.querySelector('.square__wrapper');
-mainWrap = document.querySelector('.main__wrapper');
+sideFooterWrap = document.querySelector('.sidebar__footer__wrapper');
+sideSquareWrap = document.querySelector('.sidebar__square__wrapper');
+sideMainWrap = document.querySelector('.sidebar__main__wrapper');
 
 function onWheelScroll() {
-  footerWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
-  squareWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
-  mainWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
+  sideFooterWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
+  sideSquareWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
+  sideMainWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
 
-  console.log(window.getComputedStyle(footerWrap).getPropertyValue('transform'))
+  console.log(window.getComputedStyle(sideFooterWrap).getPropertyValue('transform'))
 
-  if (window.getComputedStyle(footerWrap).getPropertyValue('transform') == 'matrix(1, 0, 0, 1, 0, 0)'
-      || window.getComputedStyle(footerWrap).getPropertyValue('transform') == 'none') {
-    footerWrap.style.transform = 'translateX(-50%)'
-    squareWrap.style.transform = 'translateX(0)'
-    mainWrap.style.transform = 'translateX(-0)'
+  if (window.getComputedStyle(sideFooterWrap).getPropertyValue('transform') == 'matrix(1, 0, 0, 1, 0, 0)'
+    || window.getComputedStyle(sideFooterWrap).getPropertyValue('transform') == 'none') {
+    sideFooterWrap.style.transform = 'translateX(-50%)'
+    sideSquareWrap.style.transform = 'translateX(0)'
+    sideMainWrap.style.transform = 'translateX(-0)'
 
   } else {
-    footerWrap.style.transform = 'translateX(0)'
-    squareWrap.style.transform = 'translateX(-50%)'
-    mainWrap.style.transform = 'translateX(-50%)'
+    sideFooterWrap.style.transform = 'translateX(0)'
+    sideSquareWrap.style.transform = 'translateX(-50%)'
+    sideMainWrap.style.transform = 'translateX(-50%)'
   }
 }
 

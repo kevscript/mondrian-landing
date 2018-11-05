@@ -8,7 +8,12 @@ body {
   width: 100%;
   min-height: 100vh;
   background: #333;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
+
+
+
+
 
 
 /************ HEADER ************/
@@ -23,12 +28,52 @@ body {
   padding: 0 3%;
 }
 
-.header input {
+.header__search {
   border: 0;
   background: 0;
   border-bottom: 1px solid #000;
   padding-bottom: 5px;
 }
+
+
+
+/************ HEADER ************/
+.menu {
+  position: fixed;
+  width: 70%;
+  height: 70px;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+}
+
+.menu__nav {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu__nav li {
+  margin-left: 8%;
+}
+
+.menu__nav a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
 
 
 /************ SIDEBAR ************/
@@ -40,7 +85,7 @@ body {
 
 
 /************ SIDEBAR MAIN ************/
-.sidebar .main {
+.sidebar__main {
   position: absolute;
   left: 0;
   width: 30%;
@@ -48,7 +93,7 @@ body {
   overflow: hidden;
 }
 
-.main__wrapper {
+.sidebar__main__wrapper {
   display: flex;
   position: relative;
   width: 200%;
@@ -56,21 +101,23 @@ body {
   transform: translateX(-50%);
 }
 
-.main__left {
+.sidebar__main__wrapper__left {
   background: #b53931;
   width: 100%;
   height: 100%;
 }
 
 
-.main__right {
+.sidebar__main__wrapper__right {
   background: #efbd4a;
   width: 100%;
   height: 100%;
 }
 
+
+
 /************ SIDEBAR SQUARES ************/
-.sidebar .square {
+.sidebar__square {
   position: absolute;
   left: 0;
   bottom: 200px;
@@ -79,7 +126,7 @@ body {
   overflow: hidden;
 }
 
-.square__wrapper {
+.sidebar__square__wrapper {
   display: flex;
   position: relative;
   width: 200%;
@@ -87,13 +134,13 @@ body {
   transform: translate(-50%);
 }
 
-.square__left {
+.sidebar__square__wrapper__left {
   background: #efbd4a;
   width: 100%;
   height: 100%;
 }
 
-.square__right {
+.sidebar__square__wrapper__right {
   background: #fff;
   width: 100%;
   height: 100%;
@@ -102,7 +149,7 @@ body {
 
 
 /************ SIDEBAR FOOTERS ************/
-.sidebar .footer {
+.sidebar__footer {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -111,21 +158,36 @@ body {
   overflow: hidden;
 }
 
-.footer__wrapper {
+.sidebar__footer__wrapper {
   display: flex;
   position: relative;
   width: 200%;
   height: 100%;
 }
 
-.footer__left {
+.sidebar__footer__wrapper__left {
   background: #b53931;
   width: 100%;
   height: 100%;
 }
 
-.footer__right {
+.sidebar__footer__wrapper__right {
   background: #fff;
   width: 100%;
   height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************ MAIN ************/
+.main {
+  
 }
