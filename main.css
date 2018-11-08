@@ -7,7 +7,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background: #333;
+  color: rgb(10, 10, 10);
   font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
@@ -95,6 +95,15 @@ body {
   transform: translate(-50%);
 }
 
+.sidebar__square__wrapper__left,
+.sidebar__square__wrapper__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
 .sidebar__square__wrapper__left {
   background: #efbd4a;
   width: 100%;
@@ -125,6 +134,31 @@ body {
   width: 200%;
   height: 100%;
 }
+
+.sidebar__footer__wrapper__left,
+.sidebar__footer__wrapper__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  padding: 2em;
+  cursor: pointer;
+}
+
+.sidebar__footer__wrapper__left p,
+.sidebar__footer__wrapper__right p {
+  font-family: 'Roboto';
+  font-size: 12px;
+  width: 80%;
+}
+
+.sidebar__footer__wrapper__left h3,
+.sidebar__footer__wrapper__right h3 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
 
 .sidebar__footer__wrapper__left {
   background: #b53931;
@@ -189,15 +223,23 @@ body {
   position: relative;
   display: flex;
   width: 200%;
-  height: auto;
-  min-height: 100%;
+  height: 100%;
   transform: translateX(-50%);
 }
 
-.main__bg__wrapper img {
-  min-height: 100%;
-  width: auto;
+.main__bg__wrapper__img-1,
+.main__bg__wrapper__img-2 {
+  width: 100%;
 }
+
+.main__bg__wrapper__img-1 {
+  background: url(./assets/bg1.jpeg);
+}
+
+.main__bg__wrapper__img-2 {
+  background: url(./assets/bg2.jpeg);
+}
+
 
 
 
@@ -217,6 +259,29 @@ body {
   width: 200%;
   height: 100%;
   transform: translateX(-50%);
+}
+
+.main__box__wrapper__left,
+.main__box__wrapper__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2em;
+  cursor: pointer;
+}
+
+.main__box__wrapper__left p,
+.main__box__wrapper__right p {
+  font-size: 12px;
+}
+
+.main__box__wrapper__left span,
+.main__box__wrapper__right span {
+  font-size: 1.5em;
+  font-weight: 600;
+  transform: rotate(90deg);
+  transform-origin: bottom;
 }
 
 .main__box__wrapper__left {
