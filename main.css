@@ -190,6 +190,7 @@ body {
   text-align: right;
   padding: 2em;
   cursor: pointer;
+  min-width: 50%;
 }
 
 .sidebar__footer__wrapper__left p,
@@ -422,17 +423,17 @@ body {
 
 
 
-
+/************* HERO TEXT *******************/
 
 .hero {
   position: absolute;
   left: 2.3%;
-  bottom: 450px;
-  z-index: 888;
+  bottom: calc(220px + 22vh);
+  z-index: 1;
 }
 
 .hero__text {
-  font-size: 16.5em;
+  font-size: 13.8vw;
   line-height: 0;
   color: #fff;
   visibility: visible;
@@ -442,4 +443,25 @@ body {
 .hero__text-2 {
   visibility: hidden;
   opacity: 0;
+}
+
+
+
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width: 1024px) {
+  
+  .sidebar__footer__wrapper__left,
+  .sidebar__footer__wrapper__right {
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .sidebar__footer__wrapper__left p,
+  .sidebar__footer__wrapper__right p {
+    width: 100%;
+  }
 }
