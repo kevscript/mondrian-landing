@@ -5,12 +5,18 @@ sideMainWrap = document.querySelector('.sidebar__main__wrapper');
 mainBgWrap = document.querySelector('.main__bg__wrapper');
 mainBoxWrap = document.querySelector('.main__box__wrapper');
 
+heroTextOne = document.querySelector('.hero__text-1');
+heroTextTwo = document.querySelector('.hero__text-2');
+
 function onWheelScroll() {
   sideFooterWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
   sideSquareWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
   sideMainWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
   mainBgWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
   mainBoxWrap.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
+  heroTextOne.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)' 
+  heroTextTwo.style.transition = 'all 0.8s cubic-bezier(.64,1.05,.89,.95)'
+
 
   console.log(window.getComputedStyle(sideFooterWrap).getPropertyValue('transform'))
 
@@ -21,6 +27,12 @@ function onWheelScroll() {
     sideMainWrap.style.transform = 'translateX(0)'
     mainBgWrap.style.transform = 'translateX(0)'
     mainBoxWrap.style.transform = 'translateX(0)'
+    
+    heroTextOne.style.opacity = '0'
+    heroTextOne.style.visibility = 'hidden'
+    heroTextTwo.style.visibility = 'visible'
+    heroTextTwo.style.opacity = '1'
+
 
   } else {
     sideFooterWrap.style.transform = 'translateX(0)'
@@ -28,6 +40,11 @@ function onWheelScroll() {
     sideMainWrap.style.transform = 'translateX(-50%)'
     mainBgWrap.style.transform = 'translateX(-50%)'
     mainBoxWrap.style.transform = 'translateX(-50%)'
+
+    heroTextTwo.style.opacity = '0'
+    heroTextTwo.style.visibility = 'hidden'
+    heroTextOne.style.visibility = 'visible'
+    heroTextOne.style.opacity = '1'
   }
 }
 

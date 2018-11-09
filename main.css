@@ -29,14 +29,16 @@ ___ MAIN SOCIAL
 
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   color: rgb(10, 10, 10);
   font-family: 'Roboto', 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 
 .container {
   display: flex;
+  position: relative;
 }
 
 
@@ -396,4 +398,48 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+  position: absolute;
+  left: 2.3%;
+  bottom: 450px;
+  z-index: 888;
+}
+
+.hero__text {
+  font-size: 16.5em;
+  line-height: 0;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+}
+
+.hero__text-2 {
+  visibility: hidden;
+  opacity: 0;
 }
